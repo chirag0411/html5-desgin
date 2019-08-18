@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CMS</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary header-sect">
+        <a class="navbar-brand mr-auto mr-lg-0" href="#">CMS</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse offcanvas-collapse ml-3" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa fa-home"></i> Content Model </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-file-o"></i> Content</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-file-o"></i> Assets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-cog"></i> Setting</a>
+                </li>
+
+            </ul>
+            <div class="nav-item dropdown  my-lg-0 user-dropdown">
+                <a class="dropdown-toggle user-img text-white" href="#" id="dropdown01" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><img src="images/user.svg"> John</a>
+                <div class="dropdown-menu pull-left" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main role="main" class="container">
+        <div class="row mt-4">
+            <div class="col-md-6 col-sm-12">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="col-md-6 col-sm-12 text-right">
+                <div class="ml-auto">
+                    <button type="button" class="btn btn-outline-dark"><i class="fa fa-th"></i></button>
+                    <button type="button" class="btn btn-outline-dark mx-2"><i class="fa fa-th-list"></i></button>
+                    <button type="button" class="btn btn-outline-dark"><i class="fa fa-cog"></i></button>
+                    <button type="button" class="btn btn-primary ml-2" data-toggle="modal" data-target="#addTask">Add Task</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center p-3 my-3 bg-purple rounded shadow-sm">
+            <table class="table table-striped list-table-show">
+                <thead>
+                    <tr>
+                        <th scope="col">Preview</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Dimension</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Updated</th>
+                        <th scope="col">By</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Cover Image</td>
+                        <td>14.0x2.02</td>
+                        <td>Image JPG</td>
+                        <td>06/18/2019</td>
+                        <td>Username1</td>
+                        <td>Draft</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-eye"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-download"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-trash-o"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Cover Image</td>
+                        <td>14.0x2.02</td>
+                        <td>Image JPG</td>
+                        <td>06/18/2019</td>
+                        <td>Username1</td>
+                        <td>Draft</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-eye"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-download"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-trash-o"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Cover Image</td>
+                        <td>14.0x2.02</td>
+                        <td>Image JPG</td>
+                        <td>06/18/2019</td>
+                        <td>Username1</td>
+                        <td>Draft</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-eye"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-download"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-trash-o"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Cover Image</td>
+                        <td>14.0x2.02</td>
+                        <td>Image JPG</td>
+                        <td>06/18/2019</td>
+                        <td>Username1</td>
+                        <td>Draft</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-eye"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-download"></i></button>
+                            <button type="button" class="btn btn-outline-primary btn-action"><i
+                                    class="fa fa-trash-o"></i></button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </main>
+    <div class="modal fade" tabindex="-1" role="dialog" id="addTask">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Add Asset</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="btn-plus">+</div>
+                </div>
+                <div class="modal-footer justify-content-start">
+                        <button type="button" class="btn btn-primary">Upload</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custome.js"></script>
+
+</html>
